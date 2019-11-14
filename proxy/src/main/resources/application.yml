@@ -4,17 +4,3 @@ server:
 spring:
   application:
     name: proxy
-
-# swagger
-swagger:
-  docket:
-    proxy:
-      title: proxy
-      description: 代理模式
-      version: 1.0
-      contact:
-        name: zhaoxb
-        email: 13486627323@163.com
-      base-package: com.zxb.html2pdf.web
-      base-path: /**
-      exclude-path: /error, /ops/**
