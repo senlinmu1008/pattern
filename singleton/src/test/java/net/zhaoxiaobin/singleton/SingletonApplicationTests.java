@@ -1,8 +1,8 @@
-package com.zxb.proxy;
+package net.zhaoxiaobin.singleton;
 
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class ProxyApplicationTests {
+public class SingletonApplicationTests {
 
 }
