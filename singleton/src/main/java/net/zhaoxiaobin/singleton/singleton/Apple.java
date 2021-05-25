@@ -1,6 +1,8 @@
 package net.zhaoxiaobin.singleton.singleton;
 
 /**
+ * 饿汉式
+ *
  * @author zhaoxb
  * @date 2021-05-10 11:05 下午
  */
