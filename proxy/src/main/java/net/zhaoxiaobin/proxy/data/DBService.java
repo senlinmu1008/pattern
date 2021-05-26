@@ -1,7 +1,7 @@
 /**
  * Copyright (C), 2015-2019
  */
-package com.zxb.proxy.data;
+package net.zhaoxiaobin.proxy.data;
 
 /**
  *

@@ -1,4 +1,4 @@
-package com.zxb.proxy;
+package net.zhaoxiaobin.proxy;
 
 import org.springframework.boot.test.context.SpringBootTest;
 

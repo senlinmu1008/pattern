@@ -1,15 +1,15 @@
 /**
  * Copyright (C), 2015-2019
  */
-package com.zxb.proxy.web;
+package net.zhaoxiaobin.proxy.web;
 
-import com.zxb.proxy.data.DBService;
-import com.zxb.proxy.data.MyService;
-import com.zxb.proxy.data.target.DBServiceImpl;
-import com.zxb.proxy.data.target.MyServiceImpl;
-import com.zxb.proxy.dyna.ProxyHandler;
-import com.zxb.proxy.sta.DBServiceImplProxy;
-import com.zxb.proxy.sta.MyServiceImplProxy;
+import net.zhaoxiaobin.proxy.data.DBService;
+import net.zhaoxiaobin.proxy.data.MyService;
+import net.zhaoxiaobin.proxy.data.target.DBServiceImpl;
+import net.zhaoxiaobin.proxy.data.target.MyServiceImpl;
+import net.zhaoxiaobin.proxy.dyna.ProxyHandler;
+import net.zhaoxiaobin.proxy.sta.DBServiceImplProxy;
+import net.zhaoxiaobin.proxy.sta.MyServiceImplProxy;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

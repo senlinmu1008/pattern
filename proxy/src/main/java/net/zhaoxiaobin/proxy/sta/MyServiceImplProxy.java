@@ -1,19 +1,18 @@
 /**
  * Copyright (C), 2015-2019
  */
-package com.zxb.proxy.sta;
+package net.zhaoxiaobin.proxy.sta;
 
-import com.zxb.proxy.aspect.LogAspect;
-import com.zxb.proxy.data.MyService;
+import net.zhaoxiaobin.proxy.aspect.LogAspect;
+import net.zhaoxiaobin.proxy.data.MyService;
 
 /**
- *
  * @author zhaoxb
  * @create 2019-11-13 21:18
  */
-public class MyServiceImplProxy implements MyService{
-    /*
-    代理类维护1个目标对象和切面对象
+public class MyServiceImplProxy implements MyService {
+    /**
+     * 代理类维护1个目标对象和切面对象
      */
     private MyService target;
     private LogAspect logAspect;

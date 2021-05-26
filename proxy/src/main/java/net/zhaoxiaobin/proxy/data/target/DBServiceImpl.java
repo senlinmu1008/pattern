@@ -1,9 +1,9 @@
 /**
  * Copyright (C), 2015-2019
  */
-package com.zxb.proxy.data.target;
+package net.zhaoxiaobin.proxy.data.target;
 
-import com.zxb.proxy.data.DBService;
+import net.zhaoxiaobin.proxy.data.DBService;
 import lombok.extern.slf4j.Slf4j;
 
 /**

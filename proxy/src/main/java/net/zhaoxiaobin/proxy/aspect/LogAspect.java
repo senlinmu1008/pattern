@@ -1,7 +1,7 @@
 /**
  * Copyright (C), 2015-2019
  */
-package com.zxb.proxy.aspect;
+package net.zhaoxiaobin.proxy.aspect;
 
 import lombok.extern.slf4j.Slf4j;
 
