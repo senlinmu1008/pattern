@@ -1,57 +1,51 @@
 /**
  * Copyright (C), 2015-2019
  */
-package net.zhaoxiaobin.proxy.sta;
+package net.zhaoxiaobin.proxy.statics;
 
-import net.zhaoxiaobin.proxy.aspect.LogAspect;
+import lombok.extern.slf4j.Slf4j;
 import net.zhaoxiaobin.proxy.data.DBService;
 
 /**
  * @author zhaoxb
  * @create 2019-11-13 19:49
  */
+@Slf4j
 public class DBServiceImplProxy implements DBService {
     /**
      * 代理类维护1个目标对象和切面对象
      */
     private DBService target;
-    private LogAspect logAspect;
 
     public DBServiceImplProxy(DBService target) {
         this.target = target;
-        this.logAspect = new LogAspect();
-    }
-
-    public DBServiceImplProxy(DBService target, LogAspect logAspect) {
-        this.target = target;
-        this.logAspect = logAspect;
     }
 
     @Override
     public void add() {
-        logAspect.doBefore();
+        log.info("=====切面-日志记录开始=====");
         target.add();
-        logAspect.doAfter();
+        log.info("=====切面-日志记录结束=====");
     }
 
     @Override
     public void delete() {
-        logAspect.doBefore();
+        log.info("=====切面-日志记录开始=====");
         target.delete();
-        logAspect.doAfter();
+        log.info("=====切面-日志记录结束=====");
     }
 
     @Override
     public void update() {
-        logAspect.doBefore();
+        log.info("=====切面-日志记录开始=====");
         target.update();
-        logAspect.doAfter();
+        log.info("=====切面-日志记录结束=====");
     }
 
     @Override
     public void query() {
-        logAspect.doBefore();
+        log.info("=====切面-日志记录开始=====");
         target.query();
-        logAspect.doAfter();
+        log.info("=====切面-日志记录结束=====");
     }
 }

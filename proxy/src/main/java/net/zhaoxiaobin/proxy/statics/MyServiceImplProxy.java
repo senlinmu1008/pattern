@@ -1,43 +1,37 @@
 /**
  * Copyright (C), 2015-2019
  */
-package net.zhaoxiaobin.proxy.sta;
+package net.zhaoxiaobin.proxy.statics;
 
-import net.zhaoxiaobin.proxy.aspect.LogAspect;
+import lombok.extern.slf4j.Slf4j;
 import net.zhaoxiaobin.proxy.data.MyService;
 
 /**
  * @author zhaoxb
  * @create 2019-11-13 21:18
  */
+@Slf4j
 public class MyServiceImplProxy implements MyService {
     /**
      * 代理类维护1个目标对象和切面对象
      */
     private MyService target;
-    private LogAspect logAspect;
 
     public MyServiceImplProxy(MyService target) {
         this.target = target;
-        this.logAspect = new LogAspect();
-    }
-
-    public MyServiceImplProxy(MyService target, LogAspect logAspect) {
-        this.target = target;
-        this.logAspect = logAspect;
     }
 
     @Override
     public void get() {
-        logAspect.doBefore();
+        log.info("=====切面-日志记录开始=====");
         target.get();
-        logAspect.doAfter();
+        log.info("=====切面-日志记录结束=====");
     }
 
     @Override
     public void set() {
-        logAspect.doBefore();
+        log.info("=====切面-日志记录开始=====");
         target.set();
-        logAspect.doAfter();
+        log.info("=====切面-日志记录结束=====");
     }
 }
